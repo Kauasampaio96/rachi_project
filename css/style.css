@@ -125,6 +125,7 @@ header nav ul a:hover {
   color: white;
   font-family: "Saro", sans-serif;
   font-size: 1.7rem;
+  font-weight: bold;
 }
 .mobilenav ul li i {
   font-size: 1.7rem;
