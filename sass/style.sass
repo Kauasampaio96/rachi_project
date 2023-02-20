@@ -1,0 +1,158 @@
+@import 'utilities'
+@import 'variables'
+
+//Gerais
+
+@include reset
+
+.container
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 75%
+
+  @include responsive-l
+    width: 85%
+
+body
+  background-color: var(--light-color)
+
+
+
+// Header
+header
+  height: 70px
+  display: flex
+  justify-content: center
+
+  .img-header
+    width: 100px
+    height: 30px
+    background-image: url('../assets/logo.png')
+
+  .mobilenav-icon
+    font-size: 1.7rem
+    color: var(--second-color)
+    cursor: pointer
+
+    @include responsive-m
+      display: block
+
+
+    
+
+  nav
+    @include responsive-m
+      display: none
+    ul
+      list-style: none
+      display: flex
+      
+      li
+        margin: 0 33px
+
+      a
+        font-size: 1rem
+        text-decoration: none
+        color: var(--gray-color)
+        transition: 0.5s
+        font-family: 'Inter', sans-serif
+        font-weight: 500
+
+        &:hover
+          color: var(--primary-color)
+
+
+// Mobile Nav
+
+.mobilenav
+  position: absolute
+  right: 0
+  top: 0
+  opacity: 0
+  z-index: -1
+  width: 100vw
+  height: 100vh
+  background-color: rgba(0,0,0, 0.45)
+  backdrop-filter: blur(20px)
+  -webkit-backdrop-filter: blur(20px) 
+
+  padding: 50px
+
+  transition: 0.5s
+
+  ul
+    list-style: none
+    margin-top: 150px
+    margin-left: 10px
+    width: 100%
+    
+  
+    li
+      margin: 60px 0
+      
+      a
+        text-decoration: none
+        color: white
+        font-family: 'Saro', sans-serif
+        font-size: 1.7rem
+      
+      i
+        font-size: 1.7rem
+        color: white
+        margin-right: 15px 
+
+      .app-icon
+        margin-left: 5px
+
+  .close
+    position: absolute
+    top: 20px
+    right: 35px
+    color: white
+    font-size: 2rem
+    cursor: pointer
+
+  img
+    position: relative
+    top: -20px
+
+
+// Section 1
+
+.sc1-hero
+  display: flex
+  justify-content: center
+  background-color: var(--second-light-color)
+
+  height: 75vh
+
+  .sc1-texts
+
+    @include responsive-m
+      width: 100%
+      text-align: center
+
+    h1
+      font-size: 3rem
+      @extend %title-format
+      margin-bottom: 50px
+
+      @include responsive-xl
+        font-size: 2.5rem
+
+      @include responsive-m
+        margin-bottom: 60px
+        font-size: 2rem
+
+    a
+      @extend %button-format
+      padding: 16px 36px
+
+  .sc1-image
+    img
+      @include responsive-xl
+        height: 430px
+
+    @include responsive-m
+      display: none
