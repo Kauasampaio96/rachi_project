@@ -27,6 +27,7 @@
 
 .dark-mode:root {
   --light-color: #293145;
+  --second-light-color: #293145;
   --second-color: #FFFFFF;
   --gray-color: #FFFFFF;
 }
@@ -58,6 +59,42 @@ header {
   display: flex;
   justify-content: center;
 }
+header .ld {
+  display: flex;
+  align-items: center;
+}
+header .ld input {
+  display: none;
+}
+header .ld input:checked ~ label .fa-sun {
+  opacity: 0;
+  transform: translateX(0);
+}
+header .ld input:checked ~ label .fa-moon {
+  opacity: 1;
+  transform: translateX(-1rem);
+}
+header .ld label {
+  position: absolute;
+  right: 100px;
+  border: 2px solid gray;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+header .ld label .fa-sun {
+  color: orange;
+  text-shadow: 0 0 20px orange;
+  transform: translateX(1rem);
+  transition: 0.3s;
+}
+header .ld label .fa-moon {
+  color: white;
+  text-shadow: 0 0 20px white;
+  transform: translateX(0rem);
+  transition: 0.3s;
+  opacity: 0;
+}
 header .img-header {
   width: 100px;
   height: 30px;
@@ -67,6 +104,7 @@ header .mobilenav-icon {
   font-size: 1.7rem;
   color: var(--second-color);
   cursor: pointer;
+  display: none;
 }
 @media (max-width: 1100px) {
   header .mobilenav-icon {

@@ -25,6 +25,43 @@ header
   display: flex
   justify-content: center
 
+  .ld
+    display: flex
+    align-items: center
+
+    input
+      display: none
+
+      &:checked ~ label
+        .fa-sun
+          opacity: 0
+          transform: translateX(0)
+        
+        .fa-moon
+          opacity: 1
+          transform: translateX(-1rem)
+    
+    label
+      position: absolute
+      right: 100px
+      border: 2px solid gray
+      border-radius: 30px
+      padding: 10px
+      cursor: pointer
+
+      .fa-sun
+        color: orange
+        text-shadow: 0 0 20px orange
+        transform: translateX(1rem)
+        transition: .3s
+
+      .fa-moon
+        color: white
+        text-shadow: 0 0 20px white
+        transform: translateX(0rem)
+        transition: .3s
+        opacity: 0
+
   .img-header
     width: 100px
     height: 30px
@@ -34,6 +71,7 @@ header
     font-size: 1.7rem
     color: var(--second-color)
     cursor: pointer
+    display: none
 
     @include responsive-m
       display: block
