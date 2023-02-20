@@ -11,11 +11,12 @@
   justify-content: space-between
   width: 75%
 
-  @include responsive-l
+  @include responsive-xl
     width: 85%
 
 body
   background-color: var(--light-color)
+  transition: .3s
 
 
 
@@ -39,24 +40,29 @@ header
         
         .fa-moon
           opacity: 1
-          transform: translateX(-1rem)
+          transform: translateX(-1.7rem)
     
     label
       position: absolute
-      right: 100px
+      right: 3%
       border: 2px solid gray
       border-radius: 30px
-      padding: 10px
+      padding: 10px 20px
       cursor: pointer
+
+      @include responsive-m
+        right: 15%
 
       .fa-sun
         color: orange
+        font-size: 1.5rem
         text-shadow: 0 0 20px orange
-        transform: translateX(1rem)
+        transform: translateX(1.5rem)
         transition: .3s
 
       .fa-moon
         color: white
+        font-size: 1.5rem
         text-shadow: 0 0 20px white
         transform: translateX(0rem)
         transition: .3s
@@ -65,7 +71,7 @@ header
   .img-header
     width: 100px
     height: 30px
-    background-image: url('../assets/logo.png')
+    background-image: url(../assets/logo.png)
 
   .mobilenav-icon
     font-size: 1.7rem
@@ -186,9 +192,15 @@ header
       padding: 16px 36px
 
   .sc1-image
-    img
-      @include responsive-xl
-        height: 430px
+    width: 500px
+    height: 500px
+    background-image: url('../assets/hero.png')
+    background-position: center
+    background-size: cover
+
+    @include responsive-l
+      width: 400px
+      height: 400px
 
     @include responsive-m
       display: none

@@ -5,17 +5,11 @@ const checkbox = document.getElementById('switch-button')
 
 const logo = document.getElementById('img-header')
 
-checkbox.addEventListener('change', function(){
+function darkLight(){
 
-  if(this.checked){
-    html.classList.toggle('dark-mode');
-    logo.style.backgroundImage = 'url(assets/logo-dark.png)'
-  }
-  else {
-    logo.style.backgroundImage = 'url(assets/logo-dark.png)'
-  }
+  html.classList.toggle('dark-mode')
 
-})
+}
 
 
 function abrirMenu(){

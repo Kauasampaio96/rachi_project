@@ -31,6 +31,12 @@
   --second-color: #FFFFFF;
   --gray-color: #FFFFFF;
 }
+.dark-mode:root .img-header {
+  background-image: url(../assets/logo-dark.png);
+}
+.dark-mode:root .sc1-image {
+  background-image: url(../assets/hero-dark.png);
+}
 
 * {
   margin: 0;
@@ -44,7 +50,7 @@
   justify-content: space-between;
   width: 75%;
 }
-@media (max-width: 1250px) {
+@media (max-width: 1500px) {
   .container {
     width: 85%;
   }
@@ -52,6 +58,7 @@
 
 body {
   background-color: var(--light-color);
+  transition: 0.3s;
 }
 
 header {
@@ -72,24 +79,31 @@ header .ld input:checked ~ label .fa-sun {
 }
 header .ld input:checked ~ label .fa-moon {
   opacity: 1;
-  transform: translateX(-1rem);
+  transform: translateX(-1.7rem);
 }
 header .ld label {
   position: absolute;
-  right: 100px;
+  right: 3%;
   border: 2px solid gray;
   border-radius: 30px;
-  padding: 10px;
+  padding: 10px 20px;
   cursor: pointer;
+}
+@media (max-width: 1100px) {
+  header .ld label {
+    right: 15%;
+  }
 }
 header .ld label .fa-sun {
   color: orange;
+  font-size: 1.5rem;
   text-shadow: 0 0 20px orange;
-  transform: translateX(1rem);
+  transform: translateX(1.5rem);
   transition: 0.3s;
 }
 header .ld label .fa-moon {
   color: white;
+  font-size: 1.5rem;
   text-shadow: 0 0 20px white;
   transform: translateX(0rem);
   transition: 0.3s;
@@ -98,7 +112,7 @@ header .ld label .fa-moon {
 header .img-header {
   width: 100px;
   height: 30px;
-  background-image: url("../assets/logo.png");
+  background-image: url(../assets/logo.png);
 }
 header .mobilenav-icon {
   font-size: 1.7rem;
@@ -212,9 +226,17 @@ header nav ul a:hover {
 .sc1-hero .sc1-texts a {
   padding: 16px 36px;
 }
-@media (max-width: 1500px) {
-  .sc1-hero .sc1-image img {
-    height: 430px;
+.sc1-hero .sc1-image {
+  width: 500px;
+  height: 500px;
+  background-image: url("../assets/hero.png");
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 1250px) {
+  .sc1-hero .sc1-image {
+    width: 400px;
+    height: 400px;
   }
 }
 @media (max-width: 1100px) {
