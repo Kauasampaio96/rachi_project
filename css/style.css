@@ -52,6 +52,9 @@ footer p, .sc5-contact .container form .input-single label, .sc5-contact .contai
 .dark-mode:root .sc3-texts a .playstore-link {
   background-image: url("../assets/playstore-dark.png");
 }
+.dark-mode:root .prata-elem {
+  border: 5px solid var(--second-light-color);
+}
 
 * {
   margin: 0;
@@ -548,7 +551,6 @@ header nav ul a:hover {
 }
 .sc4-plans .container .sc4-cards .prata-elem {
   background-color: #293145;
-  border: 5px solid var(--second-light-color);
   position: relative;
 }
 .sc4-plans .container .sc4-cards .prata-elem .prata-btn {
