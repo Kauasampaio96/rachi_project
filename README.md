@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="to_readme_op-desk.gif">
+  <img src="to_readme_rc-desk.gif">
 </p>
 
 <p align="center">
-  <img src="to_readme_op-mob.gif">
+  <img src="to_readme_rc-mob.gif">
 </p>
 
 
