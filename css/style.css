@@ -628,7 +628,7 @@ header nav ul a:hover {
   border-bottom: 1px solid var(--primary-color);
 }
 .sc5-contact .container form .input-single input:focus ~ label, .sc5-contact .container form .input-single input:valid ~ label {
-  bottom: 25px;
+  bottom: 30px;
   font-size: 0.7rem;
 }
 .sc5-contact .container form .input-single label {
