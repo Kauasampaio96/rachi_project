@@ -1,6 +1,12 @@
-.sc1-hero .sc1-texts h1 {
+.sc3-download .sc3-texts h1, .sc2-how .cards .elem h2, .sc2-how h1, .sc1-hero .sc1-texts h1 {
   color: var(--second-color);
   font-family: "Sora", sans-serif;
+}
+
+.sc3-download .sc3-texts p, .sc2-how .cards .elem p {
+  color: var(--gray-color);
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
 }
 
 .sc1-hero .sc1-texts a {
@@ -32,10 +38,19 @@
   --gray-color: #FFFFFF;
 }
 .dark-mode:root .img-header {
-  background-image: url(../assets/logo-dark.png);
+  background-image: url("../assets/logo-dark.png");
 }
 .dark-mode:root .sc1-image {
-  background-image: url(../assets/hero-dark.png);
+  background-image: url("../assets/hero-dark.png");
+}
+.dark-mode:root .sc3-image {
+  background-image: url("../assets/hero2-dark.png");
+}
+.dark-mode:root .sc3-texts a .appstore-link {
+  background-image: url("../assets/appstore-dark.png");
+}
+.dark-mode:root .sc3-texts a .playstore-link {
+  background-image: url("../assets/playstore-dark.png");
 }
 
 * {
@@ -58,7 +73,6 @@
 
 body {
   background-color: var(--light-color);
-  transition: 0.3s;
 }
 
 header {
@@ -79,7 +93,7 @@ header .ld input:checked ~ label .fa-sun {
 }
 header .ld input:checked ~ label .fa-moon {
   opacity: 1;
-  transform: translateX(-1rem);
+  transform: translateX(-1.5rem);
 }
 header .ld label {
   position: absolute;
@@ -99,7 +113,7 @@ header .ld label .fa-sun {
   color: orange;
   font-size: 1rem;
   text-shadow: 0 0 20px orange;
-  transform: translateX(1rem);
+  transform: translateX(1.5rem);
   transition: 0.3s;
 }
 header .ld label .fa-moon {
@@ -266,6 +280,162 @@ header nav ul a:hover {
   .sc1-hero .sc1-image {
     width: 290px;
     height: 200px;
+  }
+}
+
+.sc2-how {
+  display: flex;
+  justify-content: center;
+}
+.sc2-how .container {
+  flex-direction: column;
+  align-items: center;
+}
+.sc2-how h1 {
+  margin-top: 56px;
+  font-size: 2.3rem;
+}
+@media (max-width: 1100px) {
+  .sc2-how h1 {
+    font-size: 1.7rem;
+  }
+}
+.sc2-how .cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0 4rem 0;
+  width: 95%;
+}
+@media (max-width: 1100px) {
+  .sc2-how .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.sc2-how .cards .elem {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+@media (max-width: 1100px) {
+  .sc2-how .cards .elem {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+.sc2-how .cards .elem img {
+  margin-bottom: 30px;
+}
+.sc2-how .cards .elem h2 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+.sc2-how .cards .elem p {
+  text-align: center;
+}
+
+.sc3-download {
+  background-color: var(--second-light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+@media (max-width: 1100px) {
+  .sc3-download .container {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 1100px) {
+  .sc3-download .sc3-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.sc3-download .sc3-texts h1 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+@media (max-width: 1250px) {
+  .sc3-download .sc3-texts h1 {
+    font-size: 1.7rem;
+  }
+}
+.sc3-download .sc3-texts p {
+  width: 50%;
+  margin-bottom: 32px;
+}
+@media (max-width: 1100px) {
+  .sc3-download .sc3-texts p {
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .sc3-download .sc3-texts p {
+    width: 90%;
+  }
+}
+@media (max-width: 1100px) {
+  .sc3-download .sc3-texts p {
+    font-size: 0.9rem;
+  }
+}
+.sc3-download .sc3-texts .download-images {
+  display: flex;
+}
+@media (max-width: 1100px) {
+  .sc3-download .sc3-texts .download-images {
+    justify-content: center;
+  }
+}
+.sc3-download .sc3-texts .download-images a {
+  margin-right: 21px;
+}
+.sc3-download .sc3-texts .download-images .appstore-link {
+  width: 180px;
+  height: 60px;
+  background-image: url("../assets/appstore.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1100px) {
+  .sc3-download .sc3-texts .download-images .appstore-link {
+    width: 150px;
+    height: 50px;
+  }
+}
+.sc3-download .sc3-texts .download-images .playstore-link {
+  width: 180px;
+  height: 60px;
+  background-image: url("../assets/playstore.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1100px) {
+  .sc3-download .sc3-texts .download-images .playstore-link {
+    width: 150px;
+    height: 50px;
+  }
+}
+.sc3-download .sc3-image {
+  position: absolute;
+  right: 5%;
+  width: 450px;
+  height: 450px;
+  background-image: url("../assets/hero2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1100px) {
+  .sc3-download .sc3-image {
+    display: none;
   }
 }
 
