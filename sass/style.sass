@@ -92,9 +92,13 @@ header
     ul
       list-style: none
       display: flex
+
+      @include responsive-l
+        margin-right: 30px
       
       li
         margin: 0 33px
+
 
       a
         font-size: 1rem
@@ -171,11 +175,21 @@ header
 
   height: 75vh
 
+  @include responsive-m
+    height: 60vh
+
+  .container
+    @include responsive-m
+      flex-direction: column
+      justify-content: space-between
+
+
   .sc1-texts
 
     @include responsive-m
       width: 100%
-      text-align: center
+      text-align: left
+      margin-top: 50px
 
     h1
       font-size: 3rem
@@ -187,7 +201,7 @@ header
 
       @include responsive-m
         margin-bottom: 60px
-        font-size: 2rem
+        font-size: 1.5rem
 
     a
       @extend %button-format
@@ -205,4 +219,5 @@ header
       height: 400px
 
     @include responsive-m
-      display: none
+      width: 300px
+      height: 200px

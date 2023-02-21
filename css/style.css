@@ -135,6 +135,11 @@ header nav ul {
   list-style: none;
   display: flex;
 }
+@media (max-width: 1250px) {
+  header nav ul {
+    margin-right: 30px;
+  }
+}
 header nav ul li {
   margin: 0 33px;
 }
@@ -204,9 +209,21 @@ header nav ul a:hover {
   height: 75vh;
 }
 @media (max-width: 1100px) {
+  .sc1-hero {
+    height: 60vh;
+  }
+}
+@media (max-width: 1100px) {
+  .sc1-hero .container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1100px) {
   .sc1-hero .sc1-texts {
     width: 100%;
-    text-align: center;
+    text-align: left;
+    margin-top: 50px;
   }
 }
 .sc1-hero .sc1-texts h1 {
@@ -221,7 +238,7 @@ header nav ul a:hover {
 @media (max-width: 1100px) {
   .sc1-hero .sc1-texts h1 {
     margin-bottom: 60px;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 .sc1-hero .sc1-texts a {
@@ -242,7 +259,8 @@ header nav ul a:hover {
 }
 @media (max-width: 1100px) {
   .sc1-hero .sc1-image {
-    display: none;
+    width: 300px;
+    height: 200px;
   }
 }
 
