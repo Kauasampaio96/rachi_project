@@ -648,11 +648,10 @@ header nav ul a:hover {
 
 footer {
   text-align: center;
-  padding: 40px 0;
+  padding: 40px 20px;
   background-color: var(--light-color);
 }
 footer p {
-  font-weight: bold;
   color: var(--second-color);
 }
 @media (max-width: 1100px) {
