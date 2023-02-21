@@ -1,15 +1,15 @@
-.sc3-download .sc3-texts h1, .sc2-how .cards .elem h2, .sc2-how h1, .sc1-hero .sc1-texts h1 {
+.sc4-plans .container .sc4-cards .sc4-elem h2, .sc4-plans h1, .sc3-download .sc3-texts h1, .sc2-how .cards .elem h2, .sc2-how h1, .sc1-hero .sc1-texts h1 {
   color: var(--second-color);
   font-family: "Sora", sans-serif;
 }
 
-.sc3-download .sc3-texts p, .sc2-how .cards .elem p {
+.sc4-plans p, .sc3-download .sc3-texts p, .sc2-how .cards .elem p {
   color: var(--gray-color);
   font-weight: 400;
   font-family: "Inter", sans-serif;
 }
 
-.sc1-hero .sc1-texts a {
+.sc4-plans .container .sc4-cards .prata-elem .prata-btn, .sc4-plans .container .sc4-cards .sc4-elem .card-btn, .sc1-hero .sc1-texts a {
   background-color: #0F9AFE;
   border-radius: 50px;
   font-family: "Inter", sans-serif;
@@ -19,7 +19,7 @@
   box-shadow: rgba(15, 154, 254, 0.3607843137) 0px 3px 8px;
   transition: 0.5s;
 }
-.sc1-hero .sc1-texts a:hover {
+.sc4-plans .container .sc4-cards .prata-elem .prata-btn:hover, .sc4-plans .container .sc4-cards .sc4-elem .card-btn:hover, .sc1-hero .sc1-texts a:hover {
   box-shadow: #0f9afe 0px 5px 15px;
 }
 
@@ -33,7 +33,7 @@
 
 .dark-mode:root {
   --light-color: #293145;
-  --second-light-color: #293145;
+  --second-light-color: #2C364F;
   --second-color: #FFFFFF;
   --gray-color: #FFFFFF;
 }
@@ -149,9 +149,9 @@ header nav ul {
   list-style: none;
   display: flex;
 }
-@media (max-width: 1250px) {
+@media (max-width: 1500px) {
   header nav ul {
-    margin-right: 30px;
+    margin-right: 80px;
   }
 }
 header nav ul li {
@@ -279,7 +279,7 @@ header nav ul a:hover {
 @media (max-width: 1100px) {
   .sc1-hero .sc1-image {
     width: 290px;
-    height: 200px;
+    height: 210px;
   }
 }
 
@@ -344,6 +344,11 @@ header nav ul a:hover {
   padding: 7rem 0;
 }
 @media (max-width: 1100px) {
+  .sc3-download {
+    padding: 4rem 0;
+  }
+}
+@media (max-width: 1100px) {
   .sc3-download .container {
     justify-content: center;
     text-align: center;
@@ -389,11 +394,16 @@ header nav ul a:hover {
 }
 @media (max-width: 1100px) {
   .sc3-download .sc3-texts .download-images {
-    justify-content: center;
+    text-align: center;
   }
 }
 .sc3-download .sc3-texts .download-images a {
   margin-right: 21px;
+}
+@media (max-width: 1100px) {
+  .sc3-download .sc3-texts .download-images a {
+    margin-right: 10px;
+  }
 }
 .sc3-download .sc3-texts .download-images .appstore-link {
   width: 180px;
@@ -425,7 +435,7 @@ header nav ul a:hover {
 }
 .sc3-download .sc3-image {
   position: absolute;
-  right: 5%;
+  right: 13%;
   width: 450px;
   height: 450px;
   background-image: url("../assets/hero2.png");
@@ -433,10 +443,130 @@ header nav ul a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 1250px) {
+  .sc3-download .sc3-image {
+    right: 5%;
+  }
+}
 @media (max-width: 1100px) {
   .sc3-download .sc3-image {
     display: none;
   }
+}
+
+.sc4-plans {
+  display: flex;
+  justify-content: center;
+}
+.sc4-plans h1 {
+  margin: 50px 0 16px 0;
+  font-size: 2.3rem;
+}
+.sc4-plans p {
+  text-align: center;
+}
+.sc4-plans .container {
+  flex-direction: column;
+  align-items: center;
+}
+.sc4-plans .container .sc4-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 96px;
+  margin-bottom: 130px;
+}
+@media (max-width: 1100px) {
+  .sc4-plans .container .sc4-cards {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+}
+.sc4-plans .container .sc4-cards .sc4-elem {
+  width: 25%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--second-light-color);
+  padding: 20px 35px;
+}
+@media (max-width: 1500px) {
+  .sc4-plans .container .sc4-cards .sc4-elem {
+    width: 31%;
+  }
+}
+@media (max-width: 1100px) {
+  .sc4-plans .container .sc4-cards .sc4-elem {
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .sc4-plans .container .sc4-cards .sc4-elem {
+    width: 95%;
+  }
+}
+.sc4-plans .container .sc4-cards .sc4-elem h2 {
+  margin: 32px;
+  margin-bottom: 55px;
+}
+.sc4-plans .container .sc4-cards .sc4-elem .price {
+  display: flex;
+  margin-bottom: 47px;
+}
+.sc4-plans .container .sc4-cards .sc4-elem .price .small-price {
+  position: relative;
+  top: 0.3rem;
+  font-size: 0.9rem;
+}
+.sc4-plans .container .sc4-cards .sc4-elem .price .smp2 {
+  font-size: 1.2rem;
+  position: relative;
+  top: 1rem;
+}
+.sc4-plans .container .sc4-cards .sc4-elem .price p {
+  font-size: 2.5rem;
+  color: var(--second-color);
+  font-weight: bold;
+}
+.sc4-plans .container .sc4-cards .sc4-elem .details-card-p {
+  margin-bottom: 59px;
+}
+.sc4-plans .container .sc4-cards .sc4-elem .card-btn {
+  padding: 8px 80px;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.sc4-plans .container .sc4-cards .prata-elem {
+  background-color: #293145;
+  border: 5px solid var(--second-light-color);
+  position: relative;
+}
+.sc4-plans .container .sc4-cards .prata-elem .prata-btn {
+  padding: 5px 32px;
+  position: absolute;
+  top: 65px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-size: 0.7rem;
+  transition: 0.3s;
+}
+.sc4-plans .container .sc4-cards .prata-elem h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 45px;
+  position: relative;
+  top: -32px;
+}
+.sc4-plans .container .sc4-cards .prata-elem .price p {
+  color: white;
+}
+.sc4-plans .container .sc4-cards .prata-elem p {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

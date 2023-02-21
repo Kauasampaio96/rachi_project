@@ -92,8 +92,8 @@ header
       list-style: none
       display: flex
 
-      @include responsive-l
-        margin-right: 30px
+      @include responsive-xl
+        margin-right: 80px
       
       li
         margin: 0 33px
@@ -222,7 +222,7 @@ header
 
     @include responsive-m
       width: 290px
-      height: 200px
+      height: 210px
 
 //Section 2
 
@@ -286,6 +286,9 @@ header
 
   padding: 7rem 0
 
+  @include responsive-m
+    padding: 4rem 0
+
 
   .container
     @include responsive-m
@@ -326,10 +329,13 @@ header
       display: flex
 
       @include responsive-m
-        justify-content: center
+        text-align: center
       
       a
         margin-right: 21px
+
+        @include responsive-m
+          margin-right: 10px
 
       .appstore-link
         width: 180px
@@ -359,7 +365,7 @@ header
 
   .sc3-image
     position: absolute
-    right: 5%
+    right: 13%
     width: 450px
     height: 450px
     background-image: url('../assets/hero2.png')
@@ -367,5 +373,135 @@ header
     background-size: cover
     background-repeat: no-repeat
 
+    @include responsive-l
+      right: 5%
+
     @include responsive-m
       display: none
+
+
+//Section 4
+
+.sc4-plans
+  display: flex
+  justify-content: center
+
+  h1
+    margin: 50px 0 16px 0
+    font-size: 2.3rem
+    @extend %title-format
+  
+  p
+    text-align: center
+    @extend %p-format
+
+  .container
+    flex-direction: column
+    align-items: center
+
+    .sc4-cards
+      display: flex
+      justify-content: space-around
+      margin-top: 96px
+      margin-bottom: 130px
+
+      @include responsive-m
+        flex-direction: column
+        align-items: center
+
+        margin-top: 50px
+        margin-bottom: 0px
+
+      .sc4-elem
+        width: 25%
+        border-radius: 10px
+        
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        background-color: var(--second-light-color)
+        padding: 20px 35px
+
+        @include responsive-xl
+          width: 31%
+        
+        @include responsive-m
+          width: 80%
+          margin-top: 0
+          margin-bottom: 50px
+
+        @include responsive-sm
+          width: 95%
+
+        h2
+          @extend %title-format
+          margin: 32px
+          margin-bottom: 55px
+
+        .price
+          display: flex
+          margin-bottom: 47px
+
+          .small-price
+            position: relative
+            top: 0.3rem
+            font-size: 0.9rem
+          
+          .smp2
+            font-size: 1.2rem
+            position: relative
+            top: 1rem
+
+
+          p
+            font-size: 2.5rem
+            color: var(--second-color)
+            font-weight: bold
+
+        .details-card-p
+          margin-bottom: 59px
+        
+        .card-btn
+          @extend %button-format
+          padding: 8px 80px
+          font-weight: 400
+          font-size: 1.1rem
+
+      
+
+      .prata-elem
+        background-color: #293145
+        border: 5px solid var(--second-light-color)
+        position: relative
+
+        .prata-btn
+          padding: 5px 32px
+          @extend %button-format
+          position: absolute
+          top: 65px
+          text-transform: uppercase
+          letter-spacing: 4px
+          font-weight: 400
+          font-size: 0.7rem
+          transition: .3s
+
+        h2
+          color: white
+          font-size: 2rem
+          margin-bottom: 45px
+          position: relative
+          top: -32px
+
+        .price
+          p
+            color: white
+
+        p
+          color: white
+      
+      
+  
+
+  
+
