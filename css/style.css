@@ -297,7 +297,7 @@ header nav ul a:hover {
 }
 @media (max-width: 1100px) {
   .sc2-how h1 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 }
 .sc2-how .cards {
@@ -539,6 +539,12 @@ header nav ul a:hover {
   padding: 8px 80px;
   font-weight: 400;
   font-size: 1.1rem;
+}
+@media (max-width: 1100px) {
+  .sc4-plans .container .sc4-cards .sc4-elem .card-btn {
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
 }
 .sc4-plans .container .sc4-cards .prata-elem {
   background-color: #293145;
