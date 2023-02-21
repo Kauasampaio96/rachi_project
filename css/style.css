@@ -1,15 +1,15 @@
-.sc4-plans .container .sc4-cards .sc4-elem h2, .sc4-plans h1, .sc3-download .sc3-texts h1, .sc2-how .cards .elem h2, .sc2-how h1, .sc1-hero .sc1-texts h1 {
+.sc5-contact .container h1, .sc4-plans .container .sc4-cards .sc4-elem h2, .sc4-plans h1, .sc3-download .sc3-texts h1, .sc2-how .cards .elem h2, .sc2-how h1, .sc1-hero .sc1-texts h1 {
   color: var(--second-color);
   font-family: "Sora", sans-serif;
 }
 
-.sc4-plans p, .sc3-download .sc3-texts p, .sc2-how .cards .elem p {
+footer p, .sc5-contact .container form .input-single label, .sc5-contact .container p, .sc4-plans p, .sc3-download .sc3-texts p, .sc2-how .cards .elem p {
   color: var(--gray-color);
   font-weight: 400;
   font-family: "Inter", sans-serif;
 }
 
-.sc4-plans .container .sc4-cards .prata-elem .prata-btn, .sc4-plans .container .sc4-cards .sc4-elem .card-btn, .sc1-hero .sc1-texts a {
+.sc5-contact .container form .form-btn, .sc4-plans .container .sc4-cards .prata-elem .prata-btn, .sc4-plans .container .sc4-cards .sc4-elem .card-btn, .sc1-hero .sc1-texts a {
   background-color: #0F9AFE;
   border-radius: 50px;
   font-family: "Inter", sans-serif;
@@ -19,7 +19,7 @@
   box-shadow: rgba(15, 154, 254, 0.3607843137) 0px 3px 8px;
   transition: 0.5s;
 }
-.sc4-plans .container .sc4-cards .prata-elem .prata-btn:hover, .sc4-plans .container .sc4-cards .sc4-elem .card-btn:hover, .sc1-hero .sc1-texts a:hover {
+.sc5-contact .container form .form-btn:hover, .sc4-plans .container .sc4-cards .prata-elem .prata-btn:hover, .sc4-plans .container .sc4-cards .sc4-elem .card-btn:hover, .sc1-hero .sc1-texts a:hover {
   box-shadow: #0f9afe 0px 5px 15px;
 }
 
@@ -573,6 +573,92 @@ header nav ul a:hover {
 }
 .sc4-plans .container .sc4-cards .prata-elem p {
   color: white;
+}
+
+.sc5-contact {
+  display: flex;
+  justify-content: center;
+  background-image: url("../assets/background-contact.png");
+  background-size: cover;
+  background-position: center;
+}
+.sc5-contact .container {
+  flex-direction: column;
+  align-items: center;
+}
+.sc5-contact .container h1 {
+  color: white;
+  font-size: 2.3rem;
+  margin: 50px 0 16px 0;
+}
+.sc5-contact .container p {
+  color: white;
+  text-align: center;
+  margin-bottom: 93px;
+  width: 80%;
+}
+@media (max-width: 1100px) {
+  .sc5-contact .container p {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+.sc5-contact .container form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 86px;
+}
+.sc5-contact .container form .input-single {
+  position: relative;
+  width: 250px;
+  margin-right: 40px;
+}
+.sc5-contact .container form .input-single input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: 0;
+  width: 100%;
+  padding: 5px;
+  transition: 0.5s ease-in-out;
+  color: white;
+}
+.sc5-contact .container form .input-single input:focus, .sc5-contact .container form .input-single input:valid {
+  border-bottom: 1px solid var(--primary-color);
+}
+.sc5-contact .container form .input-single input:focus ~ label, .sc5-contact .container form .input-single input:valid ~ label {
+  bottom: 25px;
+  font-size: 0.7rem;
+}
+.sc5-contact .container form .input-single label {
+  color: white;
+  font-size: 0.9rem;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  cursor: text;
+  transition: 0.5s ease-in-out;
+}
+.sc5-contact .container form .form-btn {
+  padding: 8px 32px;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  background-color: var(--light-color);
+}
+footer p {
+  font-weight: bold;
+  color: var(--second-color);
+}
+@media (max-width: 1100px) {
+  footer p {
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
