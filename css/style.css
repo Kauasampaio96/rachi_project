@@ -82,6 +82,8 @@ header {
   height: 70px;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 2;
 }
 header .ld {
   display: flex;

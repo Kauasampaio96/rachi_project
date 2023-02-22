@@ -9,6 +9,11 @@
   <!--Css-->
   <link rel="stylesheet" href="css/style.css">
 
+  <!--Animations-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,15 +25,12 @@
   <!--FontAwesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   
-  <!--Animations-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 
 </head>
 <body>
 
   <!--Header-->
-  <header>
+  <header data-aos="fade-down">
 
     <div class="container">
 
@@ -79,14 +81,13 @@
 
     <div class="container">
 
-      <div class="sc1-texts">
+      <div data-aos="fade-right" class="sc1-texts">
         <h1>Rachi,<br> é tudo que você<br> precisa em um só lugar.</h1>
 
         <a href="#">Cadastrar-se</a>
       </div>
 
-      <div class="sc1-image">
-
+      <div data-aos="fade-left" class="sc1-image">
       </div>
 
     </div>
@@ -98,11 +99,11 @@
 
     <div class="container">
 
-      <h1>Como Funciona</h1>
+      <h1 data-aos="fade-down">Como Funciona</h1>
 
       <div class="cards">
 
-        <div class="elem">
+        <div data-aos="fade-up" class="elem">
 
           <img src="assets/icon1.png" alt="icon1">
 
@@ -113,7 +114,7 @@
 
         </div><!--elemento-->
 
-        <div class="elem">
+        <div data-aos="fade-up" class="elem">
 
           <img src="assets/icon2.png" alt="icon2">
 
@@ -124,7 +125,7 @@
 
         </div><!--elemento-->
 
-        <div class="elem">
+        <div data-aos="fade-up" class="elem">
 
           <img src="assets/icon3.png" alt="icon3">
 
@@ -144,7 +145,7 @@
   <section class="sc3-download">
     <div class="container">
 
-      <div class="sc3-texts">
+      <div data-aos="fade-right" class="sc3-texts">
 
         <h1>Baixe nosso app para desfrutar mais!</h1>
 
@@ -160,7 +161,7 @@
 
       </div>
 
-      <div class="sc3-image"></div>
+      <div  data-aos="fade-left" class="sc3-image"></div>
 
     </div>
   </section><!--Section 3-->
@@ -169,13 +170,13 @@
   <section class="sc4-plans">
     <div class="container">
 
-      <h1>Nossos Planos</h1>
+      <h1 data-aos="fade-down">Nossos Planos</h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+      <p data-aos="fade-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
 
       <div class="sc4-cards">
 
-        <div class="sc4-elem">
+        <div data-aos="zoom-in" class="sc4-elem">
 
           <h2>Bronze</h2>
 
@@ -191,7 +192,7 @@
 
         </div>
 
-        <div class="sc4-elem prata-elem">
+        <div  data-aos="zoom-in" class="sc4-elem prata-elem">
 
           <h2>Prata</h2>
 
@@ -209,7 +210,7 @@
 
         </div>
 
-        <div class="sc4-elem">
+        <div data-aos="zoom-in" class="sc4-elem">
 
           <h2>Ouro</h2>
 
@@ -260,14 +261,13 @@
     <p>Rachi - Todos os Direitos Reservados<br> &copy;  Kauã Chaves 2023 </p>
   </footer>
 
+  <script type="text/javascript" src="index.js"></script>
 
-<script>
-  AOS.init({
-    duration:1000
-  });
-</script>
-
-<script src="index.js"></script>
+  <script>
+    AOS.init({
+      duration:1250
+    });
+  </script>
 
 </body>
 </html>
