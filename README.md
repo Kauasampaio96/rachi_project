@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="to_readme_op-desk.gif">
+  <img src="to_readme_rc-desk.gif">
 </p>
 
 <p align="center">
-  <img src="to_readme_op-mob.gif">
+  <img src="to_readme_rc-mob.gif">
 </p>
 
 
@@ -17,7 +17,7 @@
 
   ✅ Mais uma vez utilizando de conhecimentos de Html, Sass (pré processador de Css), Design Responsivo e Javascript, desenvolvi esse projeto que agregou muito para meu desenvolvimento profissional.<br>
   
-  Atualmente é o meu maior projeto utilizando Sass e implementações com Javascript.
+  Atualmente é o meu maior projeto utilizando Sass e implementações com Javascript. Foi um projeto que agregou bastante pois desenvolvi uma funcionalidade que nunca havia desenvolvido que foi a opção de um tema escuro ou claro.
   
   ⭕ Projeto em Andamento, novas páginas em futuro próximo!
   
