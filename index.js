@@ -18,6 +18,7 @@ function abrirMenu(){
   mobilenav.style.opacity = '1'
   mobilenav.style.zIndex = '10'
 
+  sc1hero.style.transition = '0.6s'
   sc1hero.style.zIndex = '0'
 }
 
@@ -25,6 +26,6 @@ function fecharMenu(){
   mobilenav.style.opacity = '0'
   mobilenav.style.zIndex = '-1'
   sc1hero.style.zIndex = '2'
-  sc1hero.style.transition = '0.6s'
+  sc1hero.style.transition = '0'
   
 }
