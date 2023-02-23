@@ -226,6 +226,8 @@ header nav ul a:hover {
   justify-content: center;
   background-color: var(--second-light-color);
   height: 75vh;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 1100px) {
   .sc1-hero {
@@ -285,6 +287,8 @@ header nav ul a:hover {
   .sc1-hero .sc1-image {
     width: 290px;
     height: 210px;
+    position: relative;
+    bottom: -7px;
   }
 }
 

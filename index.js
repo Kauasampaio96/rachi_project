@@ -5,6 +5,8 @@ const checkbox = document.getElementById('switch-button')
 
 const logo = document.getElementById('img-header')
 
+const sc1hero = document.getElementById('sc1-hero')
+
 function darkLight(){
 
   html.classList.toggle('dark-mode')
@@ -15,9 +17,13 @@ function darkLight(){
 function abrirMenu(){
   mobilenav.style.opacity = '1'
   mobilenav.style.zIndex = '10'
+
+  sc1hero.style.zIndex = '0'
 }
 
 function fecharMenu(){
   mobilenav.style.opacity = '0'
   mobilenav.style.zIndex = '-1'
+  sc1hero.style.zIndex = '2'
+  
 }
