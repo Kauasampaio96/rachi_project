@@ -25,5 +25,6 @@ function fecharMenu(){
   mobilenav.style.opacity = '0'
   mobilenav.style.zIndex = '-1'
   sc1hero.style.zIndex = '2'
+  sc1hero.style.transition = '0.6s'
   
 }
