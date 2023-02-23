@@ -19,7 +19,7 @@
   
   Atualmente é o meu maior projeto utilizando Sass e implementações com Javascript. Foi um projeto que agregou bastante pois desenvolvi uma funcionalidade que nunca havia desenvolvido que foi a opção de um tema escuro ou claro.
   
-  ⭕ Projeto em Andamento, novas páginas em futuro próximo!
+  ⭕ Projeto em Andamento, novas páginas em um futuro próximo!
   
 </p>
 
